@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Space Mono';
+  background-color: rgb(246, 248, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dev{
+
+height: 39px;
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 39px;
+color: #222731
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 100px;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+.spaceBetween{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+header{
+  max-width: 730px;
+    width: 87%;
+}
+
+.dark{
+  margin-top: 15px;
+  display:flex;
+  align-items: center;
+  gap: 25px;
+ color: rgb(34, 39, 49);;
+  
+}
+input[type="search" i] {
+  appearance: auto;
+  box-sizing: border-box;
+  padding: 1px 2px;
+}
+#search {
+  
+  border-radius: 15px;
+  flex-wrap: nowrap;
+  margin-top: 36px;
+  max-width: 730px;
+  padding: 10px 10px 10px 32px;
+  width: 87%;
+  background-color: rgb(254, 254, 254);
+    box-shadow: rgb(70 96 187 / 20%) 0px 16px 30px -10px;
+}
+
+#search .left input {
+  background: transparent;
+  font-family: 'Space Mono';
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 25px;
+  outline: none;
+  width: 500px;
+  border: none;
+}
+
+#search .left form {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+#search button {
+  background-color: #0079ff;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  line-height: 24px;
+  width: 106px;
+}
+
+#search button:hover {
+  background-color: #60abff;
+}
+
+
+main {
+  align-items: flex-end;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  max-width: 750px;
+  padding: 48px;
+  width: 87%;
+}
+
+main .top{
+  width: 100%;
+}
+
+main .top img {
+  border-radius: 50%;
+  height: 117px;
+  width: 117px;
+}
+main .top .info .info_top .left h2 {
+  font-family: 'Space Mono';
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 39px;
+  margin-left:70px
+}
+main .box {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  gap: 90px;
+  height: 85px;
+  padding-left: 32px;
+  width: 480px;
+  
+}
+
+main .box .type {
+  font-family: 'Space Mono';
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+}
+main .box .num {
+  font-family: 'Space Mono';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+  text-transform: uppercase;
+}
+p {
+  display: block;
+
+}
+
+main .bottom {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+  justify-content: space-between;
+  margin-top: 37px;
+  width: 480px;
+}
+main .top .info .info_top .left p {
+  color: #0079ff;
+  font-family: 'Space Mono';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+main .top .info .info_bot {
+  font-family: 'Space Mono';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+main .bottom {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+  justify-content: space-between;
+  margin-top: 37px;
+  width: 480px;
+}
+main .bottom div {
+  justify-content: flex-start;
+  width: 220px;
+}
+
+#mode, .center, .centerCol {
+  align-items: center;
+  display: flex;
+}
+.center, .centerCol {
+  justify-content: center;
+}
+main .top{
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+   background-color: red;
   }
 }
